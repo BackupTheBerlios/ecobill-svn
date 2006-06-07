@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="ecobill" default="build-dist">
+
+    <property name="lib.dir" value="lib"/>
+    <property name="src.dir" value="src"/>
+    <property name="export.dir" value="export"/>
+    <property name="class.dir" value="classes"/>
+
+    <taskdef name="izpack" classpath="installer-config/IzPack/lib/compiler.jar" classname="com.izforge.izpack.ant.IzPackTask"/>
+
+    <path id="class.path">
+        <fileset dir="${class.dir}">
+            <include name="**/*.class"/>
+        </fileset>
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="init">
+        <mkdir dir="${export.dir}"/>
+    </target>
+
+    <target name="schema-export" depends="init">
+        <taskdef name="schemaexport"
+                 classname="org.hibernate.tool.hbm2ddl.SchemaExportTask"
+                 classpathref="class.path"/>
+
+        <schemaexport
+                properties="${src.dir}/ecobill/config/hibernate.properties"
+                quiet="yes"
+                text="no"
+                drop="no"
+                delimiter=";"
+                output="${export.dir}/schema-export.sql">
+            <fileset dir="src">
+                <include name="**/*.hbm.xml"/>
+            </fileset>
+        </schemaexport>
+    </target>
+
+    <target name="schema-export-text" depends="init">
+        <taskdef name="schemaexport"
+                 classname="org.hibernate.tool.hbm2ddl.SchemaExportTask"
+                 classpathref="class.path"/>
+
+        <schemaexport
+                properties="${src.dir}/ecobill/config/hibernate.properties"
+                quiet="no"
+                text="yes"
+                drop="no"
+                delimiter=";"
+                output="${export.dir}/schema-export.sql">
+            <fileset dir="src">
+                <include name="**/*.hbm.xml"/>
+            </fileset>
+        </schemaexport>
+    </target>
+
+    <target name="schema-update">
+        <taskdef name="schemaupdate"
+                 classname="org.hibernate.tool.hbm2ddl.SchemaUpdateTask"
+                 classpathref="class.path"/>
+
+        <schemaupdate
+                properties="${src.dir}/ecobill/config/hibernate.properties"
+                quiet="no"
+                text="no">
+            <fileset dir="src">
+                <include name="**/*.hbm.xml"/>
+            </fileset>
+        </schemaupdate>
+    </target>
+
+    <target name="schema-update-text">
+        <taskdef name="schemaupdate"
+                 classname="org.hibernate.tool.hbm2ddl.SchemaUpdateTask"
+                 classpathref="class.path"/>
+
+        <schemaupdate
+                properties="${src.dir}/ecobill/config/hibernate.properties"
+                quiet="no"
+                text="yes">
+            <fileset dir="src">
+                <include name="**/*.hbm.xml"/>
+            </fileset>
+        </schemaupdate>
+    </target>
+
+    <target name="build-dist">
+
+        <mkdir dir="build/classes"/>
+        <javac debug="off" target="1.5" source="1.5" srcdir="src" destdir="build/classes">
+            <compilerarg line="-Xlint:unchecked"/>
+            <classpath>
+                <fileset dir="lib" includes="**/*.jar"/>
+            </classpath>
+        </javac>
+        <copy todir="build/classes">
+            <fileset dir="src" includes="**/*.xml, **/*.properties, **/*.dtd"/>
+        </copy>
+        <copy todir="build">
+            <fileset dir="bin"/>
+        </copy>
+        <copy todir="build/html">
+            <fileset dir="html" includes="**/*.htm, **/*.html"/>
+        </copy>
+        <copy todir="build/images">
+            <fileset dir="images" includes="**/*.png, **/*.gif, **/*.ico"/>
+        </copy>
+        <copy todir="build/lib" flatten="true">
+            <fileset dir="lib" includes="**/*.jar"/>
+        </copy>
+        <copy todir="build/midi">
+            <fileset dir="midi"/>
+        </copy>
+        <copy todir="build/reports">
+            <fileset dir="reports"/>
+        </copy>
+        <copy todir="build/netupdate">
+            <fileset dir="netupdate" includes="netupdate_local_v*.xml"/>
+        </copy>
+        <copy todir="build/database">
+            <fileset dir="database"/>
+        </copy>
+        <mkdir dir="build/log"/>
+
+    </target>
+
+    <target name="build-clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="build-clean-dist" depends="build-clean,build-dist"/>
+
+    <target name="installer">
+
+        <mkdir dir="installer"/>
+
+        <izpack input="installer-config/ecobill-install.xml" output="installer/ecobill-setup.jar" installerType="standard" basedir="." izPackDir="installer-config/IzPack"/>
+
+    </target>
+
+    <target name="installer-clean">
+        <delete dir="installer"/>
+    </target>
+
+</project>

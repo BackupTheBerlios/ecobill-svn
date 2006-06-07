@@ -1,0 +1,443 @@
+12:43:06,890 INFO [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [ecobill/config/applicationContext.xml]
+12:43:07,437 INFO [ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=26872956]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy
+12:43:07,468 INFO [ClassPathXmlApplicationContext] 16 beans defined in application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=26872956]
+12:43:07,546 INFO [PropertyPreferencesPlaceholderConfigurer] Loading properties file from class path resource [ecobill/config/hibernate.properties]
+12:43:07,546 INFO [PropertyPreferencesPlaceholderConfigurer] Loading properties file from class path resource [ecobill/config/mapping.properties]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.mappings' to value [ecobill/module/base/hbm/SystemLocale.hbm.xml,ecobill/module/base/hbm/SystemUnit.hbm.xml,ecobill/module/base/hbm/SystemLanguage.hbm.xml,ecobill/module/base/hbm/SystemCountry.hbm.xml,ecobill/module/base/hbm/SystemCounty.hbm.xml,ecobill/module/base/hbm/TextBlock.hbm.xml,ecobill/module/base/hbm/NumberSequence.hbm.xml,ecobill/module/base/hbm/Person.hbm.xml,ecobill/module/base/hbm/Address.hbm.xml,ecobill/module/base/hbm/Banking.hbm.xml,ecobill/module/base/hbm/BusinessPartner.hbm.xml,ecobill/module/base/hbm/Article.hbm.xml,ecobill/module/base/hbm/ArticleDescription.hbm.xml,ecobill/module/base/hbm/DeliveryOrder.hbm.xml,ecobill/module/base/hbm/ReduplicatedArticle.hbm.xml,ecobill/module/base/hbm/Bill.hbm.xml,ecobill/module/base/hbm/Message.hbm.xml]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.max_statements' to value [50]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.url' to value [jdbc:mysql://majestix:3306/ecobill]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.dialect' to value [org.hibernate.dialect.MySQLInnoDBDialect]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.cglib.use_reflection_optimizer' to value [true]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.show_sql' to value [false]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.query.substitutions' to value [upper=toUpper]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.driver_class' to value [com.mysql.jdbc.Driver]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.password' to value [x2kub2]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.username' to value [ecobill]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.timeout' to value [1800]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.max_size' to value [20]
+12:43:07,546 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.min_size' to value [5]
+12:43:07,562 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.schemaUpdate' to value [false]
+12:43:07,562 INFO [ClassPathXmlApplicationContext] Using MessageSource [org.springframework.context.support.ResourceBundleMessageSource: basenames=[ecobill/config/bundle/base/application,ecobill/config/bundle/base/gui,ecobill/config/bundle/base/system_unit,ecobill/config/bundle/base/language,ecobill/config/bundle/base/country,ecobill/config/bundle/base/county,ecobill/config/bundle/base/article,ecobill/config/bundle/base/businesspartner,ecobill/config/bundle/base/deliveryorder,ecobill/config/bundle/base/bill,ecobill/config/bundle/base/message,ecobill/config/bundle/base/textblock,ecobill/config/bundle/base/reports]]
+12:43:07,578 INFO [ClassPathXmlApplicationContext] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@cfec48]
+12:43:07,578 INFO [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy]
+12:43:08,156 DEBUG [MainFrame] Starting splash screen animation...
+12:43:10,359 INFO [DefaultAopProxyFactory] CGLIB2 available: proxyTargetClass feature enabled
+12:43:10,437 INFO [Environment] Hibernate 3.0.5
+12:43:10,437 INFO [Environment] hibernate.properties not found
+12:43:10,437 INFO [Environment] using CGLIB reflection optimizer
+12:43:10,453 INFO [Environment] using JDK 1.4 java.sql.Timestamp handling
+12:43:10,859 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemLocale -> BASE_SYSTEM_LOCALE
+12:43:10,921 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemUnit -> BASE_SYSTEM_UNIT
+12:43:10,968 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemLanguage -> BASE_SYSTEM_LANGUAGE
+12:43:11,000 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemCountry -> BASE_SYSTEM_COUNTRY
+12:43:11,015 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemCounty -> BASE_SYSTEM_COUNTY
+12:43:11,031 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.TextBlock -> BASE_SYSTEM_TEXT_BLOCK
+12:43:11,046 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.NumberSequence -> BASE_NUMBER_SEQUENCE
+12:43:11,062 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Person -> BASE_PERSON
+12:43:11,171 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Address -> BASE_ADDRESS
+12:43:11,203 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Banking -> BASE_BANKING
+12:43:11,218 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.BusinessPartner -> BASE_BUSINESS_PARTNER
+12:43:11,234 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Article -> BASE_ARTICLE
+12:43:11,250 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.ArticleDescription -> BASE_ARTICLE_DESCRIPTION
+12:43:11,265 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.DeliveryOrder -> BASE_DELIVERY_ORDER
+12:43:11,296 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.ReduplicatedArticle -> BASE_REDUPLICATED_ARTICLE
+12:43:11,312 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Bill -> BASE_BILL
+12:43:11,328 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Message -> BASE_SYSTEM_MESSAGE
+12:43:11,328 INFO [LocalSessionFactoryBean] Building new Hibernate SessionFactory
+12:43:11,328 INFO [Configuration] processing extends queue
+12:43:11,328 INFO [Configuration] processing collection mappings
+12:43:11,328 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.SystemLanguage.systemCountries -> BASE_SYSTEM_COUNTRY
+12:43:11,328 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.SystemCountry.systemCounties -> BASE_SYSTEM_COUNTY
+12:43:11,328 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.BusinessPartner.deliveryOrders -> BASE_DELIVERY_ORDER
+12:43:11,328 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.BusinessPartner.bills -> BASE_BILL
+12:43:11,328 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.Article.descriptions -> BASE_ARTICLE_DESCRIPTION
+12:43:11,328 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.DeliveryOrder.articles -> BASE_REDUPLICATED_ARTICLE
+12:43:11,328 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.Bill.deliveryOrders -> BASE_DELIVERY_ORDER
+12:43:11,328 INFO [Configuration] processing association property references
+12:43:11,328 INFO [Configuration] processing foreign key constraints
+12:43:11,343 INFO [C3P0ConnectionProvider] C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://majestix:3306/ecobill
+12:43:11,343 INFO [C3P0ConnectionProvider] Connection properties: {user=ecobill, password=****, release_mode=on_close}
+12:43:11,343 INFO [C3P0ConnectionProvider] autocommit mode: false
+12:43:11,687 INFO [SettingsFactory] RDBMS: MySQL, version: 4.1.15-nt
+12:43:11,687 INFO [SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.7 ( $Date: 2005/01/25 19:11:41 $, $Revision: 1.27.4.54 $ )
+12:43:11,781 INFO [Dialect] Using dialect: org.hibernate.dialect.MySQLInnoDBDialect
+12:43:11,781 INFO [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+12:43:11,781 INFO [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:43:11,796 INFO [SettingsFactory] Automatic flush during beforeCompletion(): disabled
+12:43:11,796 INFO [SettingsFactory] Automatic session close at end of transaction: disabled
+12:43:11,796 INFO [SettingsFactory] JDBC batch size: 15
+12:43:11,796 INFO [SettingsFactory] JDBC batch updates for versioned data: disabled
+12:43:11,796 INFO [SettingsFactory] Scrollable result sets: enabled
+12:43:11,796 INFO [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+12:43:11,796 INFO [SettingsFactory] Connection release mode: on_close
+12:43:11,796 INFO [SettingsFactory] Maximum outer join fetch depth: 2
+12:43:11,796 INFO [SettingsFactory] Default batch fetch size: 1
+12:43:11,796 INFO [SettingsFactory] Generate SQL with comments: disabled
+12:43:11,812 INFO [SettingsFactory] Order SQL updates by primary key: disabled
+12:43:11,812 INFO [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:43:11,812 INFO [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+12:43:11,812 INFO [SettingsFactory] Query language substitutions: {upper=toUpper}
+12:43:11,812 INFO [SettingsFactory] Second-level cache: enabled
+12:43:11,812 INFO [SettingsFactory] Query cache: disabled
+12:43:11,812 INFO [SettingsFactory] Cache provider: org.hibernate.cache.EhCacheProvider
+12:43:11,843 INFO [SettingsFactory] Optimize cache for minimal puts: disabled
+12:43:11,843 INFO [SettingsFactory] Structured second-level cache entries: disabled
+12:43:11,859 INFO [SettingsFactory] Statistics: disabled
+12:43:11,859 INFO [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+12:43:11,859 INFO [SettingsFactory] Default entity-mode: pojo
+12:43:11,890 INFO [SessionFactoryImpl] building session factory
+12:43:11,906 WARN [Configurator] No configuration found. Configuring ehcache from ehcache-failsafe.xml found in the classpath: jar:file:/D:/Projects/EcoBill/build/lib/ehcache-1.1.jar!/ehcache-failsafe.xml
+12:43:12,531 INFO [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+12:43:12,531 INFO [SessionFactoryImpl] Checking 0 named queries
+12:43:12,843 INFO [JdbcTransactionObjectSupport] JDBC 3.0 Savepoint class is available
+12:43:13,296 DEBUG [ArticleTable] Erzeuge TablePanel.
+12:43:14,109 ERROR [ArticleUI] serialized\article\article_table.ebs (Das System kann den angegebenen Pfad nicht finden)
+12:43:14,156 DEBUG [BusinessPartnerTable] Erzeuge TablePanel.
+12:43:14,640 ERROR [BusinessPartnerUI] serialized\businesspartner\business_partner_table.ebs (Das System kann den angegebenen Pfad nicht finden)
+12:43:14,718 DEBUG [DeliveryOrderArticleTable] Erzeuge TablePanel.
+12:43:14,906 ERROR [DeliveryOrderUI] serialized\deliveryorder\delivery_order_table.ebs (Das System kann den angegebenen Pfad nicht finden)
+12:43:14,953 DEBUG [BillTable] Erzeuge TablePanel.
+12:43:15,015 DEBUG [BillArticleTable] Erzeuge TablePanel.
+12:43:15,031 DEBUG [DeliveryOrderTableWithCB] Erzeuge TablePanel.
+12:43:15,437 DEBUG [MainFrame] ... splash screen animation finished.
+12:43:32,843 DEBUG [BillTable] Erzeuge TablePanel.
+12:48:51,312 INFO [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [ecobill/config/applicationContext.xml]
+12:48:51,593 INFO [ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=19230370]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy
+12:48:51,609 INFO [ClassPathXmlApplicationContext] 16 beans defined in application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=19230370]
+12:48:51,687 INFO [PropertyPreferencesPlaceholderConfigurer] Loading properties file from class path resource [ecobill/config/hibernate.properties]
+12:48:51,687 INFO [PropertyPreferencesPlaceholderConfigurer] Loading properties file from class path resource [ecobill/config/mapping.properties]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.mappings' to value [ecobill/module/base/hbm/SystemLocale.hbm.xml,ecobill/module/base/hbm/SystemUnit.hbm.xml,ecobill/module/base/hbm/SystemLanguage.hbm.xml,ecobill/module/base/hbm/SystemCountry.hbm.xml,ecobill/module/base/hbm/SystemCounty.hbm.xml,ecobill/module/base/hbm/TextBlock.hbm.xml,ecobill/module/base/hbm/NumberSequence.hbm.xml,ecobill/module/base/hbm/Person.hbm.xml,ecobill/module/base/hbm/Address.hbm.xml,ecobill/module/base/hbm/Banking.hbm.xml,ecobill/module/base/hbm/BusinessPartner.hbm.xml,ecobill/module/base/hbm/Article.hbm.xml,ecobill/module/base/hbm/ArticleDescription.hbm.xml,ecobill/module/base/hbm/DeliveryOrder.hbm.xml,ecobill/module/base/hbm/ReduplicatedArticle.hbm.xml,ecobill/module/base/hbm/Bill.hbm.xml,ecobill/module/base/hbm/Message.hbm.xml]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.max_statements' to value [50]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.url' to value [jdbc:mysql://majestix:3306/ecobill]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.dialect' to value [org.hibernate.dialect.MySQLInnoDBDialect]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.cglib.use_reflection_optimizer' to value [true]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.show_sql' to value [false]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.query.substitutions' to value [upper=toUpper]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.driver_class' to value [com.mysql.jdbc.Driver]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.password' to value [x2kub2]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.username' to value [ecobill]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.timeout' to value [1800]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.max_size' to value [20]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.min_size' to value [5]
+12:48:51,703 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.schemaUpdate' to value [false]
+12:48:51,718 INFO [ClassPathXmlApplicationContext] Using MessageSource [org.springframework.context.support.ResourceBundleMessageSource: basenames=[ecobill/config/bundle/base/application,ecobill/config/bundle/base/gui,ecobill/config/bundle/base/system_unit,ecobill/config/bundle/base/language,ecobill/config/bundle/base/country,ecobill/config/bundle/base/county,ecobill/config/bundle/base/article,ecobill/config/bundle/base/businesspartner,ecobill/config/bundle/base/deliveryorder,ecobill/config/bundle/base/bill,ecobill/config/bundle/base/message,ecobill/config/bundle/base/textblock,ecobill/config/bundle/base/reports]]
+12:48:51,718 INFO [ClassPathXmlApplicationContext] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@62937c]
+12:48:51,718 INFO [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy]
+12:48:51,890 DEBUG [MainFrame] Starting splash screen animation...
+12:48:54,046 INFO [DefaultAopProxyFactory] CGLIB2 available: proxyTargetClass feature enabled
+12:48:54,125 INFO [Environment] Hibernate 3.0.5
+12:48:54,125 INFO [Environment] hibernate.properties not found
+12:48:54,125 INFO [Environment] using CGLIB reflection optimizer
+12:48:54,125 INFO [Environment] using JDK 1.4 java.sql.Timestamp handling
+12:48:54,453 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemLocale -> BASE_SYSTEM_LOCALE
+12:48:54,515 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemUnit -> BASE_SYSTEM_UNIT
+12:48:54,546 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemLanguage -> BASE_SYSTEM_LANGUAGE
+12:48:54,578 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemCountry -> BASE_SYSTEM_COUNTRY
+12:48:54,609 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemCounty -> BASE_SYSTEM_COUNTY
+12:48:54,625 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.TextBlock -> BASE_SYSTEM_TEXT_BLOCK
+12:48:54,625 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.NumberSequence -> BASE_NUMBER_SEQUENCE
+12:48:54,656 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Person -> BASE_PERSON
+12:48:54,750 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Address -> BASE_ADDRESS
+12:48:54,781 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Banking -> BASE_BANKING
+12:48:54,796 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.BusinessPartner -> BASE_BUSINESS_PARTNER
+12:48:54,812 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Article -> BASE_ARTICLE
+12:48:54,828 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.ArticleDescription -> BASE_ARTICLE_DESCRIPTION
+12:48:54,843 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.DeliveryOrder -> BASE_DELIVERY_ORDER
+12:48:54,890 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.ReduplicatedArticle -> BASE_REDUPLICATED_ARTICLE
+12:48:54,906 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Bill -> BASE_BILL
+12:48:54,906 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Message -> BASE_SYSTEM_MESSAGE
+12:48:54,906 INFO [LocalSessionFactoryBean] Building new Hibernate SessionFactory
+12:48:54,906 INFO [Configuration] processing extends queue
+12:48:54,906 INFO [Configuration] processing collection mappings
+12:48:54,906 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.SystemLanguage.systemCountries -> BASE_SYSTEM_COUNTRY
+12:48:54,906 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.SystemCountry.systemCounties -> BASE_SYSTEM_COUNTY
+12:48:54,921 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.BusinessPartner.deliveryOrders -> BASE_DELIVERY_ORDER
+12:48:54,921 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.BusinessPartner.bills -> BASE_BILL
+12:48:54,921 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.Article.descriptions -> BASE_ARTICLE_DESCRIPTION
+12:48:54,921 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.DeliveryOrder.articles -> BASE_REDUPLICATED_ARTICLE
+12:48:54,921 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.Bill.deliveryOrders -> BASE_DELIVERY_ORDER
+12:48:54,921 INFO [Configuration] processing association property references
+12:48:54,921 INFO [Configuration] processing foreign key constraints
+12:48:54,937 INFO [C3P0ConnectionProvider] C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://majestix:3306/ecobill
+12:48:54,937 INFO [C3P0ConnectionProvider] Connection properties: {user=ecobill, password=****, release_mode=on_close}
+12:48:54,937 INFO [C3P0ConnectionProvider] autocommit mode: false
+12:48:55,250 INFO [SettingsFactory] RDBMS: MySQL, version: 4.1.15-nt
+12:48:55,250 INFO [SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.7 ( $Date: 2005/01/25 19:11:41 $, $Revision: 1.27.4.54 $ )
+12:48:55,312 INFO [Dialect] Using dialect: org.hibernate.dialect.MySQLInnoDBDialect
+12:48:55,328 INFO [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+12:48:55,328 INFO [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:48:55,328 INFO [SettingsFactory] Automatic flush during beforeCompletion(): disabled
+12:48:55,328 INFO [SettingsFactory] Automatic session close at end of transaction: disabled
+12:48:55,343 INFO [SettingsFactory] JDBC batch size: 15
+12:48:55,343 INFO [SettingsFactory] JDBC batch updates for versioned data: disabled
+12:48:55,343 INFO [SettingsFactory] Scrollable result sets: enabled
+12:48:55,343 INFO [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+12:48:55,343 INFO [SettingsFactory] Connection release mode: on_close
+12:48:55,359 INFO [SettingsFactory] Maximum outer join fetch depth: 2
+12:48:55,359 INFO [SettingsFactory] Default batch fetch size: 1
+12:48:55,359 INFO [SettingsFactory] Generate SQL with comments: disabled
+12:48:55,359 INFO [SettingsFactory] Order SQL updates by primary key: disabled
+12:48:55,359 INFO [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:48:55,359 INFO [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+12:48:55,359 INFO [SettingsFactory] Query language substitutions: {upper=toUpper}
+12:48:55,359 INFO [SettingsFactory] Second-level cache: enabled
+12:48:55,359 INFO [SettingsFactory] Query cache: disabled
+12:48:55,359 INFO [SettingsFactory] Cache provider: org.hibernate.cache.EhCacheProvider
+12:48:55,359 INFO [SettingsFactory] Optimize cache for minimal puts: disabled
+12:48:55,359 INFO [SettingsFactory] Structured second-level cache entries: disabled
+12:48:55,375 INFO [SettingsFactory] Statistics: disabled
+12:48:55,375 INFO [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+12:48:55,375 INFO [SettingsFactory] Default entity-mode: pojo
+12:48:55,421 INFO [SessionFactoryImpl] building session factory
+12:48:55,437 WARN [Configurator] No configuration found. Configuring ehcache from ehcache-failsafe.xml found in the classpath: jar:file:/D:/Projects/EcoBill/build/lib/ehcache-1.1.jar!/ehcache-failsafe.xml
+12:48:56,046 INFO [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+12:48:56,046 INFO [SessionFactoryImpl] Checking 0 named queries
+12:48:56,328 INFO [JdbcTransactionObjectSupport] JDBC 3.0 Savepoint class is available
+12:48:56,734 DEBUG [ArticleTable] Erzeuge TablePanel.
+12:48:57,500 ERROR [ArticleUI] serialized\article\article_table.ebs (Das System kann den angegebenen Pfad nicht finden)
+12:48:57,640 DEBUG [BusinessPartnerTable] Erzeuge TablePanel.
+12:48:58,171 ERROR [BusinessPartnerUI] serialized\businesspartner\business_partner_table.ebs (Das System kann den angegebenen Pfad nicht finden)
+12:48:58,265 DEBUG [DeliveryOrderArticleTable] Erzeuge TablePanel.
+12:48:58,421 ERROR [DeliveryOrderUI] serialized\deliveryorder\delivery_order_table.ebs (Das System kann den angegebenen Pfad nicht finden)
+12:48:58,468 DEBUG [BillTable] Erzeuge TablePanel.
+12:48:58,531 DEBUG [BillArticleTable] Erzeuge TablePanel.
+12:48:58,562 DEBUG [DeliveryOrderTableWithCB] Erzeuge TablePanel.
+12:48:58,937 DEBUG [MainFrame] ... splash screen animation finished.
+12:49:04,750 DEBUG [BillTable] Erzeuge TablePanel.
+13:07:55,000 DEBUG [BillTable] Erzeuge TablePanel.
+13:08:00,734 DEBUG [BillTable] Erzeuge TablePanel.
+13:11:51,875 DEBUG [BillTable] Erzeuge TablePanel.
+13:40:18,015 DEBUG [MainFrame] Action: Beenden
+13:40:19,125 INFO [ClassPathXmlApplicationContext] Closing application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=19230370]
+13:40:19,125 INFO [DefaultListableBeanFactory] Destroying singletons in factory {org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy}
+13:40:19,125 INFO [BusinessPartnerUI] Schlie?e BusinessPartnerUI und speichere die Daten.
+13:40:19,171 INFO [ArticleUI] Schlie?e ArticleUI und speichere die Daten.
+13:40:19,578 INFO [DeliveryOrderUI] Schlieﬂe DeliveryOrderUI und speichere die Daten.
+13:40:19,578 INFO [LocalSessionFactoryBean] Closing Hibernate SessionFactory
+13:40:19,578 INFO [SessionFactoryImpl] closing
+14:52:24,328 INFO [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [ecobill/config/applicationContext.xml]
+14:52:24,593 INFO [ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=7306473]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy
+14:52:24,609 INFO [ClassPathXmlApplicationContext] 16 beans defined in application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=7306473]
+14:52:24,671 INFO [PropertyPreferencesPlaceholderConfigurer] Loading properties file from class path resource [ecobill/config/hibernate.properties]
+14:52:24,671 INFO [PropertyPreferencesPlaceholderConfigurer] Loading properties file from class path resource [ecobill/config/mapping.properties]
+14:52:24,671 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.mappings' to value [ecobill/module/base/hbm/SystemLocale.hbm.xml,ecobill/module/base/hbm/SystemUnit.hbm.xml,ecobill/module/base/hbm/SystemLanguage.hbm.xml,ecobill/module/base/hbm/SystemCountry.hbm.xml,ecobill/module/base/hbm/SystemCounty.hbm.xml,ecobill/module/base/hbm/TextBlock.hbm.xml,ecobill/module/base/hbm/NumberSequence.hbm.xml,ecobill/module/base/hbm/Person.hbm.xml,ecobill/module/base/hbm/Address.hbm.xml,ecobill/module/base/hbm/Banking.hbm.xml,ecobill/module/base/hbm/BusinessPartner.hbm.xml,ecobill/module/base/hbm/Article.hbm.xml,ecobill/module/base/hbm/ArticleDescription.hbm.xml,ecobill/module/base/hbm/DeliveryOrder.hbm.xml,ecobill/module/base/hbm/ReduplicatedArticle.hbm.xml,ecobill/module/base/hbm/Bill.hbm.xml,ecobill/module/base/hbm/Message.hbm.xml]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.max_statements' to value [50]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.url' to value [jdbc:mysql://majestix:3306/ecobill]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.dialect' to value [org.hibernate.dialect.MySQLInnoDBDialect]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.cglib.use_reflection_optimizer' to value [true]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.show_sql' to value [false]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.query.substitutions' to value [upper=toUpper]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.driver_class' to value [com.mysql.jdbc.Driver]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.password' to value [x2kub2]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.username' to value [ecobill]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.timeout' to value [1800]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.max_size' to value [20]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.min_size' to value [5]
+14:52:24,687 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.schemaUpdate' to value [false]
+14:52:24,703 INFO [ClassPathXmlApplicationContext] Using MessageSource [org.springframework.context.support.ResourceBundleMessageSource: basenames=[ecobill/config/bundle/base/application,ecobill/config/bundle/base/gui,ecobill/config/bundle/base/system_unit,ecobill/config/bundle/base/language,ecobill/config/bundle/base/country,ecobill/config/bundle/base/county,ecobill/config/bundle/base/article,ecobill/config/bundle/base/businesspartner,ecobill/config/bundle/base/deliveryorder,ecobill/config/bundle/base/bill,ecobill/config/bundle/base/message,ecobill/config/bundle/base/textblock,ecobill/config/bundle/base/reports]]
+14:52:24,703 INFO [ClassPathXmlApplicationContext] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@15a0305]
+14:52:24,703 INFO [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy]
+14:52:24,859 DEBUG [MainFrame] Starting splash screen animation...
+14:52:26,781 INFO [DefaultAopProxyFactory] CGLIB2 available: proxyTargetClass feature enabled
+14:52:26,859 INFO [Environment] Hibernate 3.0.5
+14:52:26,859 INFO [Environment] hibernate.properties not found
+14:52:26,859 INFO [Environment] using CGLIB reflection optimizer
+14:52:26,859 INFO [Environment] using JDK 1.4 java.sql.Timestamp handling
+14:52:27,171 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemLocale -> BASE_SYSTEM_LOCALE
+14:52:27,234 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemUnit -> BASE_SYSTEM_UNIT
+14:52:27,265 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemLanguage -> BASE_SYSTEM_LANGUAGE
+14:52:27,312 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemCountry -> BASE_SYSTEM_COUNTRY
+14:52:27,328 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemCounty -> BASE_SYSTEM_COUNTY
+14:52:27,343 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.TextBlock -> BASE_SYSTEM_TEXT_BLOCK
+14:52:27,343 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.NumberSequence -> BASE_NUMBER_SEQUENCE
+14:52:27,375 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Person -> BASE_PERSON
+14:52:27,468 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Address -> BASE_ADDRESS
+14:52:27,500 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Banking -> BASE_BANKING
+14:52:27,515 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.BusinessPartner -> BASE_BUSINESS_PARTNER
+14:52:27,531 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Article -> BASE_ARTICLE
+14:52:27,546 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.ArticleDescription -> BASE_ARTICLE_DESCRIPTION
+14:52:27,562 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.DeliveryOrder -> BASE_DELIVERY_ORDER
+14:52:27,593 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.ReduplicatedArticle -> BASE_REDUPLICATED_ARTICLE
+14:52:27,609 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Bill -> BASE_BILL
+14:52:27,625 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Message -> BASE_SYSTEM_MESSAGE
+14:52:27,625 INFO [LocalSessionFactoryBean] Building new Hibernate SessionFactory
+14:52:27,625 INFO [Configuration] processing extends queue
+14:52:27,625 INFO [Configuration] processing collection mappings
+14:52:27,625 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.SystemLanguage.systemCountries -> BASE_SYSTEM_COUNTRY
+14:52:27,625 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.SystemCountry.systemCounties -> BASE_SYSTEM_COUNTY
+14:52:27,625 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.BusinessPartner.deliveryOrders -> BASE_DELIVERY_ORDER
+14:52:27,625 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.BusinessPartner.bills -> BASE_BILL
+14:52:27,625 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.Article.descriptions -> BASE_ARTICLE_DESCRIPTION
+14:52:27,625 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.DeliveryOrder.articles -> BASE_REDUPLICATED_ARTICLE
+14:52:27,625 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.Bill.deliveryOrders -> BASE_DELIVERY_ORDER
+14:52:27,625 INFO [Configuration] processing association property references
+14:52:27,625 INFO [Configuration] processing foreign key constraints
+14:52:27,640 INFO [C3P0ConnectionProvider] C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://majestix:3306/ecobill
+14:52:27,640 INFO [C3P0ConnectionProvider] Connection properties: {user=ecobill, password=****, release_mode=on_close}
+14:52:27,640 INFO [C3P0ConnectionProvider] autocommit mode: false
+14:52:27,937 INFO [SettingsFactory] RDBMS: MySQL, version: 4.1.15-nt
+14:52:27,937 INFO [SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.7 ( $Date: 2005/01/25 19:11:41 $, $Revision: 1.27.4.54 $ )
+14:52:27,984 INFO [Dialect] Using dialect: org.hibernate.dialect.MySQLInnoDBDialect
+14:52:28,000 INFO [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+14:52:28,000 INFO [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+14:52:28,000 INFO [SettingsFactory] Automatic flush during beforeCompletion(): disabled
+14:52:28,000 INFO [SettingsFactory] Automatic session close at end of transaction: disabled
+14:52:28,015 INFO [SettingsFactory] JDBC batch size: 15
+14:52:28,015 INFO [SettingsFactory] JDBC batch updates for versioned data: disabled
+14:52:28,031 INFO [SettingsFactory] Scrollable result sets: enabled
+14:52:28,031 INFO [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+14:52:28,031 INFO [SettingsFactory] Connection release mode: on_close
+14:52:28,031 INFO [SettingsFactory] Maximum outer join fetch depth: 2
+14:52:28,031 INFO [SettingsFactory] Default batch fetch size: 1
+14:52:28,031 INFO [SettingsFactory] Generate SQL with comments: disabled
+14:52:28,031 INFO [SettingsFactory] Order SQL updates by primary key: disabled
+14:52:28,031 INFO [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+14:52:28,062 INFO [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+14:52:28,062 INFO [SettingsFactory] Query language substitutions: {upper=toUpper}
+14:52:28,062 INFO [SettingsFactory] Second-level cache: enabled
+14:52:28,062 INFO [SettingsFactory] Query cache: disabled
+14:52:28,062 INFO [SettingsFactory] Cache provider: org.hibernate.cache.EhCacheProvider
+14:52:28,093 INFO [SettingsFactory] Optimize cache for minimal puts: disabled
+14:52:28,093 INFO [SettingsFactory] Structured second-level cache entries: disabled
+14:52:28,093 INFO [SettingsFactory] Statistics: disabled
+14:52:28,093 INFO [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+14:52:28,109 INFO [SettingsFactory] Default entity-mode: pojo
+14:52:28,140 INFO [SessionFactoryImpl] building session factory
+14:52:28,156 WARN [Configurator] No configuration found. Configuring ehcache from ehcache-failsafe.xml found in the classpath: jar:file:/D:/Projects/EcoBill/build/lib/ehcache-1.1.jar!/ehcache-failsafe.xml
+14:52:28,718 INFO [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+14:52:28,718 INFO [SessionFactoryImpl] Checking 0 named queries
+14:52:28,890 INFO [JdbcTransactionObjectSupport] JDBC 3.0 Savepoint class is available
+14:52:29,250 DEBUG [ArticleTable] Erzeuge TablePanel.
+14:52:30,203 DEBUG [BusinessPartnerTable] Erzeuge TablePanel.
+14:52:30,843 DEBUG [DeliveryOrderArticleTable] Erzeuge TablePanel.
+14:52:31,046 DEBUG [BillTable] Erzeuge TablePanel.
+14:52:31,109 DEBUG [BillArticleTable] Erzeuge TablePanel.
+14:52:31,125 DEBUG [DeliveryOrderTableWithCB] Erzeuge TablePanel.
+14:52:31,468 DEBUG [MainFrame] ... splash screen animation finished.
+14:52:59,531 DEBUG [DeliveryOrderTable] Erzeuge TablePanel.
+14:53:48,265 DEBUG [BillTable] Erzeuge TablePanel.
+14:54:53,437 DEBUG [DeliveryOrderTable] Erzeuge TablePanel.
+14:55:22,687 DEBUG [BillTable] Erzeuge TablePanel.
+14:57:08,750 DEBUG [DeliveryOrderTable] Erzeuge TablePanel.
+14:57:33,687 DEBUG [BillTable] Erzeuge TablePanel.
+14:57:56,812 DEBUG [DeliveryOrderTable] Erzeuge TablePanel.
+14:58:25,484 DEBUG [BillTable] Erzeuge TablePanel.
+14:58:44,015 DEBUG [BillTable] Erzeuge TablePanel.
+14:58:49,296 DEBUG [BillTable] Erzeuge TablePanel.
+14:59:15,171 DEBUG [MainFrame] Action: Beenden
+14:59:16,062 INFO [ClassPathXmlApplicationContext] Closing application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=7306473]
+14:59:16,062 INFO [DefaultListableBeanFactory] Destroying singletons in factory {org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy}
+14:59:16,062 INFO [BusinessPartnerUI] Schlie?e BusinessPartnerUI und speichere die Daten.
+14:59:16,078 INFO [ArticleUI] Schlie?e ArticleUI und speichere die Daten.
+14:59:16,140 INFO [DeliveryOrderUI] Schlieﬂe DeliveryOrderUI und speichere die Daten.
+14:59:16,171 INFO [LocalSessionFactoryBean] Closing Hibernate SessionFactory
+14:59:16,171 INFO [SessionFactoryImpl] closing
+15:57:02,515 INFO [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [ecobill/config/applicationContext.xml]
+15:57:02,828 INFO [ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=31436753]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy
+15:57:02,859 INFO [ClassPathXmlApplicationContext] 16 beans defined in application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=31436753]
+15:57:02,921 INFO [PropertyPreferencesPlaceholderConfigurer] Loading properties file from class path resource [ecobill/config/hibernate.properties]
+15:57:02,921 INFO [PropertyPreferencesPlaceholderConfigurer] Loading properties file from class path resource [ecobill/config/mapping.properties]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.mappings' to value [ecobill/module/base/hbm/SystemLocale.hbm.xml,ecobill/module/base/hbm/SystemUnit.hbm.xml,ecobill/module/base/hbm/SystemLanguage.hbm.xml,ecobill/module/base/hbm/SystemCountry.hbm.xml,ecobill/module/base/hbm/SystemCounty.hbm.xml,ecobill/module/base/hbm/TextBlock.hbm.xml,ecobill/module/base/hbm/NumberSequence.hbm.xml,ecobill/module/base/hbm/Person.hbm.xml,ecobill/module/base/hbm/Address.hbm.xml,ecobill/module/base/hbm/Banking.hbm.xml,ecobill/module/base/hbm/BusinessPartner.hbm.xml,ecobill/module/base/hbm/Article.hbm.xml,ecobill/module/base/hbm/ArticleDescription.hbm.xml,ecobill/module/base/hbm/DeliveryOrder.hbm.xml,ecobill/module/base/hbm/ReduplicatedArticle.hbm.xml,ecobill/module/base/hbm/Bill.hbm.xml,ecobill/module/base/hbm/Message.hbm.xml]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.max_statements' to value [50]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.url' to value [jdbc:mysql://majestix:3306/ecobill]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.dialect' to value [org.hibernate.dialect.MySQLInnoDBDialect]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.cglib.use_reflection_optimizer' to value [true]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.show_sql' to value [false]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.query.substitutions' to value [upper=toUpper]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.driver_class' to value [com.mysql.jdbc.Driver]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.password' to value [x2kub2]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.connection.username' to value [ecobill]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.timeout' to value [1800]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.max_size' to value [20]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.c3p0.min_size' to value [5]
+15:57:02,921 DEBUG [PropertyPreferencesPlaceholderConfigurer] Resolved placeholder 'hibernate.schemaUpdate' to value [false]
+15:57:02,937 INFO [ClassPathXmlApplicationContext] Using MessageSource [org.springframework.context.support.ResourceBundleMessageSource: basenames=[ecobill/config/bundle/base/application,ecobill/config/bundle/base/gui,ecobill/config/bundle/base/system_unit,ecobill/config/bundle/base/language,ecobill/config/bundle/base/country,ecobill/config/bundle/base/county,ecobill/config/bundle/base/article,ecobill/config/bundle/base/businesspartner,ecobill/config/bundle/base/deliveryorder,ecobill/config/bundle/base/bill,ecobill/config/bundle/base/message,ecobill/config/bundle/base/textblock,ecobill/config/bundle/base/reports]]
+15:57:02,937 INFO [ClassPathXmlApplicationContext] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@765a16]
+15:57:02,937 INFO [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy]
+15:57:03,125 DEBUG [MainFrame] Starting splash screen animation...
+15:57:04,937 INFO [DefaultAopProxyFactory] CGLIB2 available: proxyTargetClass feature enabled
+15:57:05,000 INFO [Environment] Hibernate 3.0.5
+15:57:05,015 INFO [Environment] hibernate.properties not found
+15:57:05,015 INFO [Environment] using CGLIB reflection optimizer
+15:57:05,015 INFO [Environment] using JDK 1.4 java.sql.Timestamp handling
+15:57:05,328 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemLocale -> BASE_SYSTEM_LOCALE
+15:57:05,390 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemUnit -> BASE_SYSTEM_UNIT
+15:57:05,421 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemLanguage -> BASE_SYSTEM_LANGUAGE
+15:57:05,468 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemCountry -> BASE_SYSTEM_COUNTRY
+15:57:05,484 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.SystemCounty -> BASE_SYSTEM_COUNTY
+15:57:05,500 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.TextBlock -> BASE_SYSTEM_TEXT_BLOCK
+15:57:05,515 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.NumberSequence -> BASE_NUMBER_SEQUENCE
+15:57:05,531 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Person -> BASE_PERSON
+15:57:05,640 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Address -> BASE_ADDRESS
+15:57:05,656 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Banking -> BASE_BANKING
+15:57:05,671 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.BusinessPartner -> BASE_BUSINESS_PARTNER
+15:57:05,687 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Article -> BASE_ARTICLE
+15:57:05,703 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.ArticleDescription -> BASE_ARTICLE_DESCRIPTION
+15:57:05,718 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.DeliveryOrder -> BASE_DELIVERY_ORDER
+15:57:05,765 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.ReduplicatedArticle -> BASE_REDUPLICATED_ARTICLE
+15:57:05,781 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Bill -> BASE_BILL
+15:57:05,796 INFO [HbmBinder] Mapping class: ecobill.module.base.domain.Message -> BASE_SYSTEM_MESSAGE
+15:57:05,796 INFO [LocalSessionFactoryBean] Building new Hibernate SessionFactory
+15:57:05,796 INFO [Configuration] processing extends queue
+15:57:05,796 INFO [Configuration] processing collection mappings
+15:57:05,796 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.SystemLanguage.systemCountries -> BASE_SYSTEM_COUNTRY
+15:57:05,796 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.SystemCountry.systemCounties -> BASE_SYSTEM_COUNTY
+15:57:05,796 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.BusinessPartner.deliveryOrders -> BASE_DELIVERY_ORDER
+15:57:05,796 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.BusinessPartner.bills -> BASE_BILL
+15:57:05,796 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.Article.descriptions -> BASE_ARTICLE_DESCRIPTION
+15:57:05,796 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.DeliveryOrder.articles -> BASE_REDUPLICATED_ARTICLE
+15:57:05,796 INFO [HbmBinder] Mapping collection: ecobill.module.base.domain.Bill.deliveryOrders -> BASE_DELIVERY_ORDER
+15:57:05,796 INFO [Configuration] processing association property references
+15:57:05,796 INFO [Configuration] processing foreign key constraints
+15:57:05,812 INFO [C3P0ConnectionProvider] C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://majestix:3306/ecobill
+15:57:05,812 INFO [C3P0ConnectionProvider] Connection properties: {user=ecobill, password=****, release_mode=on_close}
+15:57:05,812 INFO [C3P0ConnectionProvider] autocommit mode: false
+15:57:06,171 INFO [SettingsFactory] RDBMS: MySQL, version: 4.1.15-nt
+15:57:06,171 INFO [SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.7 ( $Date: 2005/01/25 19:11:41 $, $Revision: 1.27.4.54 $ )
+15:57:06,234 INFO [Dialect] Using dialect: org.hibernate.dialect.MySQLInnoDBDialect
+15:57:06,234 INFO [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+15:57:06,250 INFO [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+15:57:06,250 INFO [SettingsFactory] Automatic flush during beforeCompletion(): disabled
+15:57:06,250 INFO [SettingsFactory] Automatic session close at end of transaction: disabled
+15:57:06,250 INFO [SettingsFactory] JDBC batch size: 15
+15:57:06,250 INFO [SettingsFactory] JDBC batch updates for versioned data: disabled
+15:57:06,250 INFO [SettingsFactory] Scrollable result sets: enabled
+15:57:06,250 INFO [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+15:57:06,250 INFO [SettingsFactory] Connection release mode: on_close
+15:57:06,250 INFO [SettingsFactory] Maximum outer join fetch depth: 2
+15:57:06,250 INFO [SettingsFactory] Default batch fetch size: 1
+15:57:06,250 INFO [SettingsFactory] Generate SQL with comments: disabled
+15:57:06,250 INFO [SettingsFactory] Order SQL updates by primary key: disabled
+15:57:06,250 INFO [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+15:57:06,250 INFO [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+15:57:06,250 INFO [SettingsFactory] Query language substitutions: {upper=toUpper}
+15:57:06,250 INFO [SettingsFactory] Second-level cache: enabled
+15:57:06,250 INFO [SettingsFactory] Query cache: disabled
+15:57:06,250 INFO [SettingsFactory] Cache provider: org.hibernate.cache.EhCacheProvider
+15:57:06,265 INFO [SettingsFactory] Optimize cache for minimal puts: disabled
+15:57:06,265 INFO [SettingsFactory] Structured second-level cache entries: disabled
+15:57:06,281 INFO [SettingsFactory] Statistics: disabled
+15:57:06,281 INFO [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+15:57:06,281 INFO [SettingsFactory] Default entity-mode: pojo
+15:57:06,343 INFO [SessionFactoryImpl] building session factory
+15:57:06,343 WARN [Configurator] No configuration found. Configuring ehcache from ehcache-failsafe.xml found in the classpath: jar:file:/D:/Projects/EcoBill/build/lib/ehcache-1.1.jar!/ehcache-failsafe.xml
+15:57:06,968 INFO [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+15:57:06,968 INFO [SessionFactoryImpl] Checking 0 named queries
+15:57:07,140 INFO [JdbcTransactionObjectSupport] JDBC 3.0 Savepoint class is available
+15:57:07,421 DEBUG [ArticleTable] Erzeuge TablePanel.
+15:57:08,406 DEBUG [BusinessPartnerTable] Erzeuge TablePanel.
+15:57:08,953 DEBUG [DeliveryOrderArticleTable] Erzeuge TablePanel.
+15:57:09,156 DEBUG [BillTable] Erzeuge TablePanel.
+15:57:09,203 DEBUG [BillArticleTable] Erzeuge TablePanel.
+15:57:09,250 DEBUG [DeliveryOrderTableWithCB] Erzeuge TablePanel.
+15:57:09,609 DEBUG [MainFrame] ... splash screen animation finished.
+15:57:16,875 DEBUG [BillTable] Erzeuge TablePanel.
+15:57:28,640 DEBUG [BillTable] Erzeuge TablePanel.
+15:58:04,250 DEBUG [MainFrame] Action: Beenden
+15:58:05,250 INFO [ClassPathXmlApplicationContext] Closing application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=31436753]
+15:58:05,250 INFO [DefaultListableBeanFactory] Destroying singletons in factory {org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [propertyConfigurer,messageSource,workArea,splashScreen,sessionFactory,hibernateTemplate,transactionManager,baseDao,baseServiceTarget,baseService,mainFrame,messageUI,articleUI,businessPartnerUI,deliveryOrderUI,billUI]; root of BeanFactory hierarchy}
+15:58:05,250 INFO [BusinessPartnerUI] Schlie?e BusinessPartnerUI und speichere die Daten.
+15:58:05,265 INFO [ArticleUI] Schlie?e ArticleUI und speichere die Daten.
+15:58:05,359 INFO [DeliveryOrderUI] Schlieﬂe DeliveryOrderUI und speichere die Daten.
+15:58:05,359 INFO [LocalSessionFactoryBean] Closing Hibernate SessionFactory
+15:58:05,359 INFO [SessionFactoryImpl] closing

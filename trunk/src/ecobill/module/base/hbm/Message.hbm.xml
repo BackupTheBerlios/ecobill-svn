@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!--
+ User: aw
+ Date: 31.07.2005
+ Time: 17:32:05
+
+ @author Andreas Weiler
+ @version $Id: Message.hbm.xml,v 1.10 2005/10/08 11:10:14 raedler Exp $
+ @since EcoBill 1.0
+-->
+
+<hibernate-mapping default-lazy="false">
+
+    <class name="ecobill.module.base.domain.Message" table="BASE_SYSTEM_MESSAGE">
+
+        <id name="id" type="long" unsaved-value="-1">
+            <column name="ID" not-null="true"/>
+            <generator class="native"/>
+        </id>
+
+        <property name="addresser" type="string">
+            <column name="ADDRESSER" not-null="true" unique="false"/>
+        </property>
+
+        <property name="subject" type="string">
+            <column name="SUBJECT" not-null="true" unique="false"/>
+        </property>
+
+        <property name="message" type="string">
+            <column name="MESSAGE" not-null="true" unique="false"/>
+        </property>
+
+    </class>
+
+</hibernate-mapping>

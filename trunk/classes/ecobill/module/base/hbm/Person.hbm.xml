@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!--
+ User: rro
+ Date: 21.07.2005
+ Time: 13:37:24
+
+ @author Roman R&auml;dle
+ @version $Id: Person.hbm.xml,v 1.4 2005/12/11 17:16:01 raedler Exp $
+ @since EcoBill 1.0
+-->
+
+<hibernate-mapping default-lazy="false">
+
+    <class name="ecobill.module.base.domain.Person" table="BASE_PERSON">
+
+        <id name="id" type="long" unsaved-value="-1">
+            <column name="ID" not-null="true"/>
+            <generator class="native"/>
+        </id>
+
+        <many-to-one name="title"
+                     column="TITLE_ID"
+                     class="ecobill.module.base.domain.SystemUnit"
+                     cascade="none"
+                     lazy="false"/>
+
+        <many-to-one name="academicTitle"
+                     column="ACADEMIC_TITLE_ID"
+                     class="ecobill.module.base.domain.SystemUnit"
+                     cascade="none"
+                     lazy="false"/>
+
+        <property name="firstname" type="string">
+            <column name="FIRSTNAME" not-null="false"/>
+        </property>
+
+        <property name="lastname" type="string">
+            <column name="LASTNAME" not-null="false"/>
+        </property>
+
+        <property name="phone" type="string">
+            <column name="PHONE" not-null="false"/>
+        </property>
+
+        <property name="fax" type="string">
+            <column name="FAX" not-null="false"/>
+        </property>
+
+        <property name="email" type="string">
+            <column name="EMAIL" not-null="false"/>
+        </property>
+
+        <many-to-one name="address" class="ecobill.module.base.domain.Address" column="ADDRESS_ID"/>
+
+    </class>
+
+</hibernate-mapping>
