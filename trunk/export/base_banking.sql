@@ -5,11 +5,11 @@
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET CHARACTER SET 'utf8' */;
 
-# Host: localhost    Database: ecobill
+# Host: localhost    Database: org.ecobill
 # ------------------------------------------------------
 # Server version 4.1.11-nt
 
-USE `ecobill`;
+USE `org.ecobill`;
 
 #
 # Dumping data for table base_banking

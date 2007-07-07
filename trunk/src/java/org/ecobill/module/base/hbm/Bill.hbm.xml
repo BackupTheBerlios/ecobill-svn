@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!--
+ User: rro
+ Date: 21.07.2005
+ Time: 13:37:24
+
+ @author Roman R&auml;dle
+ @version $Id: Bill.hbm.xml,v 1.8 2006/01/30 23:43:13 raedler Exp $
+ @since EcoBill 1.0
+-->
+
+<hibernate-mapping default-lazy="false">
+
+    <class name="org.ecobill.module.base.domain.Bill" table="BASE_BILL">
+
+        <id name="id" type="long" unsaved-value="-1">
+            <column name="ID" not-null="true"/>
+            <generator class="native"/>
+        </id>
+
+        <many-to-one name="businessPartner" class="org.ecobill.module.base.domain.BusinessPartner"
+                     column="BUSINESS_PARTNER_ID" lazy="false"/>
+
+        <property name="billNumber" type="string">
+            <column name="BILL_NUMBER" not-null="true"/>
+        </property>
+
+        <property name="billDate" type="date">
+            <column name="BILL_DATE" not-null="true"/>
+        </property>
+
+        <property name="characterisationType" type="string">
+            <column name="CHARACTERISATION_TYPE"/>
+        </property>
+
+        <property name="prefixFreetext" type="string">
+            <column name="PREFIX_FREE_TEXT" length="4000" not-null="false"/>
+        </property>
+
+        <property name="suffixFreetext" type="string">
+            <column name="SUFFIX_FREE_TEXT" length="4000" not-null="false"/>
+        </property>
+
+        <set name="deliveryOrders" table="BASE_DELIVERY_ORDER" cascade="save-update" lazy="false">
+            <key column="BILL_ID"/>
+            <one-to-many class="org.ecobill.module.base.domain.DeliveryOrder"/>
+        </set>
+
+    </class>
+
+</hibernate-mapping>

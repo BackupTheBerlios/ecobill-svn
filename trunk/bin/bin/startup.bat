@@ -11,5 +11,5 @@ for %%i in (".\lib\*.jar") do call ".\bin\cpappend.bat" %%i
 set ECOBILL_CLASSPATH=%CLASSPATH%
 set CLASSPATH=%TMP_CLASSPATH%
 
-java -cp "%ECOBILL_CLASSPATH%" -Xms24m -Xmx512m ecobill.Start %*
+java -cp "%ECOBILL_CLASSPATH%" -Xms24m -Xmx512m org.ecobill.Start %*
 

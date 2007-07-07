@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!--
+ User: rro
+ Date: 26.07.2005
+ Time: 22:24:58
+ 
+ @author Roman R&auml;dle
+ @version $Id: ReduplicatedArticle.hbm.xml,v 1.10 2006/01/29 23:16:45 raedler Exp $
+ @since EcoBill 1.0
+-->
+
+<hibernate-mapping default-lazy="false">
+
+    <class name="org.ecobill.module.base.domain.ReduplicatedArticle" table="BASE_REDUPLICATED_ARTICLE">
+
+        <id name="id" type="long" unsaved-value="-1">
+            <column name="ID" not-null="true"/>
+            <generator class="native"/>
+        </id>
+
+        <many-to-one name="deliveryOrder"
+                     column="DELIVERY_ORDER_ID"
+                     class="org.ecobill.module.base.domain.DeliveryOrder"
+                     cascade="save-update"
+                     lazy="false"/>
+
+        <property name="orderPosition" type="integer">
+            <column name="ORDER_POSITION" not-null="true"/>
+        </property>
+
+        <property name="articleNumber" type="string">
+            <column name="ARTICLE_NUMBER" not-null="false"/>
+        </property>
+
+        <property name="quantity" type="double">
+            <column name="QUANTITY" not-null="true"/>
+        </property>
+
+        <property name="unit" type="string">
+            <column name="UNIT" not-null="true"/>
+        </property>
+
+        <property name="price" type="double">
+            <column name="PRICE" not-null="true"/>
+        </property>
+
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="4000" not-null="true"/>
+        </property>
+
+    </class>
+
+</hibernate-mapping>

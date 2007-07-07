@@ -1,8 +1,8 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>0</headerType>
-  <jar>D:\Projects\EcoBill\installer\ecobill-setup.jar</jar>
-  <outfile>D:\Projects\EcoBill\installer\ecobill-setup.exe</outfile>
+  <jar>D:\Projects\EcoBill\installer\org.ecobill-setup.jar</jar>
+  <outfile>D:\Projects\EcoBill\installer\org.ecobill-setup.exe</outfile>
   <errTitle>Couldn&apos;t execute setup for EcoBill</errTitle>
   <jarArgs></jarArgs>
   <chdir></chdir>

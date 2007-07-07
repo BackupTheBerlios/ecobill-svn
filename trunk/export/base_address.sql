@@ -5,17 +5,17 @@
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET CHARACTER SET 'utf8' */;
 
-# Host: localhost    Database: ecobill
+# Host: localhost    Database: org.ecobill
 # ------------------------------------------------------
 # Server version 4.1.11-nt
 
-USE `ecobill`;
+USE `org.ecobill`;
 
 #
 # Dumping data for table base_address
 #
 
-INSERT INTO `base_address` (`ID`,`STREET`,`ZIP_CODE`,`CITY`,`COUNTY`,`COUNTRY`) VALUES (1,'Obere Laube 51','78462','Konstanz','Baden-Württemberg','Deutschland');
+INSERT INTO `base_address` (`ID`,`STREET`,`ZIP_CODE`,`CITY`,`COUNTY`,`COUNTRY`) VALUES (1,'Obere Laube 51','78462','Konstanz','Baden-Wï¿½rttemberg','Deutschland');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

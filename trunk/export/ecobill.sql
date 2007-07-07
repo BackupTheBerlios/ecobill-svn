@@ -5,7 +5,7 @@
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET CHARACTER SET 'utf8' */;
 
-CREATE DATABASE `ecobill` /*!40100 DEFAULT CHARACTER SET utf8 */;USE `ecobill`;
+CREATE DATABASE `org.ecobill` /*!40100 DEFAULT CHARACTER SET utf8 */;USE `org.ecobill`;
 
 CREATE TABLE `base_address` (
   `ID` bigint(20) NOT NULL auto_increment,
@@ -17,7 +17,7 @@ CREATE TABLE `base_address` (
   PRIMARY KEY  (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `base_address` VALUES (6,'Rheingutstraße 32 / 524','78462','Konstanz','de-bw','DE');
+INSERT INTO `base_address` VALUES (6,'Rheingutstraï¿½e 32 / 524','78462','Konstanz','de-bw','DE');
 
 CREATE TABLE `base_article` (
   `ID` bigint(20) NOT NULL auto_increment,
@@ -118,7 +118,7 @@ CREATE TABLE `base_person` (
   KEY `FKA96370837C9C9BCE` (`TITLE_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `base_person` VALUES (6,45,NULL,'Roman','Rädle','(0 75 31) 38 22 27','','roman@raedle.info',NULL);
+INSERT INTO `base_person` VALUES (6,45,NULL,'Roman','Rï¿½dle','(0 75 31) 38 22 27','','roman@raedle.info',NULL);
 
 CREATE TABLE `base_reduplicated_article` (
   `ID` bigint(20) NOT NULL auto_increment,
